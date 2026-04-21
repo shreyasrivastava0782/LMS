@@ -3,7 +3,8 @@ import { userLoggedIn, userLoggedOut } from "../authSlice.js";
 
 
 // Keep a trailing slash so relative endpoint URLs resolve under `/api/v1/user/*`.
-const USER_API = "/api/v1/user/";
+// const USER_API = "/api/v1/user/";
+const USER_API = `${import.meta.env.VITE_BACKEND_URL}/api/v1/user/`;
 
 export const authApi = createApi({
     reducerPath:'authApi',
