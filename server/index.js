@@ -20,6 +20,7 @@ const PORT=process.env.PORT|| 3000;
 
 app.use(cors({
     origin:"http://localhost:5173",
+            "https://lms-kohl-psi.vercel.app",
     // origin:true,
     credentials:true
 }))
