@@ -18,7 +18,8 @@ import { useParams } from "react-router-dom";
 import { toast } from "sonner";
 
 
-const MEDIA_API="http://${import.meta.env.VITE_BACKEND_URL}/api/v1/media"
+// const MEDIA_API="http://${import.meta.env.VITE_BACKEND_URL}/api/v1/media"
+const MEDIA_API = `${import.meta.env.VITE_BACKEND_URL}/api/v1/media`;
 const LectureTab = () => {
 
   const [lectureTitle,setLectureTitle]=useState("");
