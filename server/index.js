@@ -31,6 +31,8 @@ app.use('/api/v1/purchase/webhook', express.raw({ type: 'application/json' }));
 app.use(express.json());
 app.use(cookieParser());
 
+console.log("UserRoute:", userRoute);
+console.log("CourseRoute:", courseRoute);
 
 
 

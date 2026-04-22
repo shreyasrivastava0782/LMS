@@ -187,7 +187,7 @@ const Profile = () => {
           {user?.enrolledCourses?.length === 0 ? (
             <h1>You haven't enrolled yet</h1>
           ) : (
-            user.enrolledCourses.map((course) => (
+            user?.enrolledCourses.map((course) => (
               <Course key={course._id} course={course} />
             ))
           )}

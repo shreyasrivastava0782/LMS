@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-
+console.log("BASE URL:", import.meta.env.VITE_BACKEND_URL);
 //created RTK QUERY
 // const COURSE_API="http://${import.meta.env.VITE_BACKEND_URL}/api/v1/course"
 const COURSE_API = `${import.meta.env.VITE_BACKEND_URL}/api/v1/course`;
